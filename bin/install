@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+set -e
+
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+brew install git tmux zsh vim lua
+brew cask install mjolnir slack firefox google-chrome iterm2 vagrant 1password dropbox
+
+echo 'rocks_servers = { "http://rocks.moonscript.org" }' >> /usr/local/etc/luarocks52/config-5.2.lua
+
+echo "REMINDER: set up your 1password vaults via icloud and dropbox"

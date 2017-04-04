@@ -1,5 +1,6 @@
-package.path = package.path .. ";" .. getenv("HOME") .. "/.luarocks/share/lua/5.2/?.lua"
-package.cpath = package.cpath .. ";" .. getenv("HOME") .. "/.luarocks/lib/lua/5.2/?.so"
+local os = require "os"
+package.path = package.path .. ";" .. os.getenv("HOME") .. "/.luarocks/share/lua/5.2/?.lua"
+package.cpath = package.cpath .. ";" .. os.getenv("HOME") .. "/.luarocks/lib/lua/5.2/?.so"
 
 local hotkey = require "mjolnir.hotkey"
 local alert = require "mjolnir.alert"

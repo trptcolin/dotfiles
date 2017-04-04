@@ -10,6 +10,10 @@ java_version 1.8
 
 export CC=/usr/bin/clang
 
+alias ls="ls -G"
+alias ll="ls -lah"
+alias l="ll"
+
 alias be='bundle exec'
 alias rake='noglob rake'
 
@@ -45,5 +49,11 @@ function find_classpath_jar_contents() {
     jar tf $jar | grep $query
   done
 }
+
+if [ -d $HOME/.zshrc.d ]; then
+  for file in $HOME/.zshrc.d/*.zsh; do
+    source $file
+  done
+fi
 
 eval "$(rbenv init -)"

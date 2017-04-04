@@ -12,7 +12,13 @@ echo "$(which zsh)" | sudo tee -a /etc/shells
 chsh -s $(which zsh)
 
 # Mac apps
-brew cask install slack firefox google-chrome iterm2 vagrant dropbox gpgtools skype
+brew tap caskroom/versions
+brew cask install google-chrome firefox \
+  dropbox box-sync \
+  caffeine flycut \
+  skype slack \
+  iterm2 gpgtools vagrant \
+  dash3
 
 # Mjolnir
 brew install lua
@@ -27,5 +33,4 @@ brew install rbenv
 
 # JVM
 brew cask install java
-brew tap caskroom/versions
 brew cask install java7

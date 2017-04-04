@@ -8,6 +8,9 @@ Assumes starting with a fresh OSX install
 - Clone dotfiles repository
 - Run `bin/install`
 - Set up 1password vaults via icloud and dropbox
+- Transfer GPG keys
+  - See https://gpgtools.tenderapp.com/kb/gpg-keychain-faq/backup-or-transfer-your-keys
+- Download Dash license (search email for link)
 - Dock: delete almost everything, move it to the left, and auto-hide it
 - Keyboard preferences (System Preferences -> Keyboard):
   - Remap caps lock to control (Keyboard -> Modifier Keys)

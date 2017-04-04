@@ -1,59 +1,17 @@
-bindkey -e
-
-bindkey "^u" backward-kill-line
-
-function java_version {
-  version=$1
-  export JAVA_HOME=$(/usr/libexec/java_home -v $version)
-}
-java_version 1.8
-
-export CC=/usr/bin/clang
+unsetopt auto_cd
+unsetopt correct_all
 
 alias ls="ls -G"
 alias ll="ls -lah"
 alias l="ll"
 
-alias be='bundle exec'
-alias rake='noglob rake'
-
-iterm_title() {
-  if [[ "$SSH_CONNECTION" == "" ]]; then
-    export TAB_TITLE=`basename $PWD`
-  else
-    export TAB_TITLE=`hostname`
-  fi
-  echo -ne "\033]0;$TAB_TITLE\\007";
-}
-
-PROMPT_COMMAND='iterm_title'
-
-unsetopt auto_cd
-unsetopt correctall
-
+export PATH=$HOME/bin:$PATH
 export EDITOR=vim
-
-export PATH=$HOME/bin:$GIT_SVN_EXTERNALS:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/sbin:/usr/X11/bin:$PATH
-
+export CC=/usr/bin/clang
 export MANPATH=/usr/share/man:$MANPATH
-MANPATH="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/share/man/:$MANPATH"
-
-function classpath_jars() {
-  tr ':' '\n' | grep ".jar$"
-}
-
-function find_classpath_jar_contents() {
-  query=$1
-  for jar in $(classpath_jars); do
-    echo Checking $jar...
-    jar tf $jar | grep $query
-  done
-}
 
 if [ -d $HOME/.zshrc.d ]; then
   for file in $HOME/.zshrc.d/*.zsh; do
     source $file
   done
 fi
-
-eval "$(rbenv init -)"

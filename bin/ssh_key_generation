@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+set -e
+
+ssh-keygen -t rsa -b 4096 -C "trptcolin@gmail.com"
+eval "$(ssh-agent -s)"
+cat ~/.ssh/id_rsa.pub | pbcopy

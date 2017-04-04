@@ -2,14 +2,15 @@
 
 set -e
 
-# Homebrew
+# Basics
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+brew cask install 1password
 
 # Terminal programs
 brew install git tmux zsh vim lua
 
 # Mac apps
-brew cask install slack firefox google-chrome iterm2 vagrant 1password dropbox
+brew cask install slack firefox google-chrome iterm2 vagrant dropbox gpgtools skype
 
 # Mjolnir
 brew cask install mjolnir 

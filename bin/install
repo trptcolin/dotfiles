@@ -24,3 +24,8 @@ luarocks install mjolnir.sd.grid --local
 
 # Ruby
 brew install rbenv
+
+# JVM
+brew cask install java
+brew tap caskroom/versions
+brew cask install java7

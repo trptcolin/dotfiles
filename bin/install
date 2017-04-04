@@ -2,11 +2,19 @@
 
 set -e
 
+# Homebrew
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
+# Terminal programs
 brew install git tmux zsh vim lua
-brew cask install mjolnir slack firefox google-chrome iterm2 vagrant 1password dropbox
 
+# Mac apps
+brew cask install slack firefox google-chrome iterm2 vagrant 1password dropbox
+
+# Mjolnir
+brew cask install mjolnir 
 echo 'rocks_servers = { "http://rocks.moonscript.org" }' >> /usr/local/etc/luarocks52/config-5.2.lua
+luarocks install mjolnir.hotkey --local
+luarocks install mjolnir.alert --local
+luarocks install mjolnir.sd.grid --local
 
-echo "REMINDER: set up your 1password vaults via icloud and dropbox"

@@ -34,3 +34,5 @@ brew install rbenv
 # JVM
 brew cask install java
 brew cask install java7
+
+launchctl start org.openbsd.ssh-agent

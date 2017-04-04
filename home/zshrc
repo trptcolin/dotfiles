@@ -45,3 +45,5 @@ function find_classpath_jar_contents() {
     jar tf $jar | grep $query
   done
 }
+
+eval "$(rbenv init -)"

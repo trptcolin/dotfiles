@@ -22,3 +22,5 @@ luarocks install mjolnir.hotkey --local
 luarocks install mjolnir.alert --local
 luarocks install mjolnir.sd.grid --local
 
+# Ruby
+brew install rbenv

@@ -7,12 +7,15 @@ set -e
 brew cask install 1password
 
 # Terminal programs
-brew install git tmux zsh vim lua
+brew install git tmux zsh vim
+echo "$(which zsh)" | sudo tee -a /etc/shells
+chsh -s $(which zsh)
 
 # Mac apps
 brew cask install slack firefox google-chrome iterm2 vagrant dropbox gpgtools skype
 
 # Mjolnir
+brew install lua
 brew cask install mjolnir 
 echo 'rocks_servers = { "http://rocks.moonscript.org" }' >> /usr/local/etc/luarocks52/config-5.2.lua
 luarocks install mjolnir.hotkey --local

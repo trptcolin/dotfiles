@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 
-set -e
-
 dir_resolve()
 {
   cd "$1" 2>/dev/null || return $?
@@ -12,5 +10,7 @@ script_path="$(dir_resolve $(dirname $0))"
 home_path="$(dir_resolve "$script_path/../home")"
 
 for f in $(ls "$home_path"); do
-  ln -s "$home_path/$f" "$HOME/.$f"
+  if [[ ! -e "$HOME/.$f" ]]; then
+    ln -s "$home_path/$f" "$HOME/.$f"
+  fi
 done

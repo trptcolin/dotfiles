@@ -1,0 +1,44 @@
+[user]
+  email = trptcolin@gmail.com
+  name = Colin Jones
+  signingkey = 16F1DDB9
+[color]
+  diff = auto
+  status = auto
+  branch = auto
+  ui = true
+[core]
+  excludesfile = ~/.gitignore
+  editor = vim
+  ignorecase = true
+  autocrlf = input
+[alias]
+  co = checkout
+  co-pr = !sh -c 'git fetch origin pull/$1/head:pr/$1 && git checkout pr/$1' -
+  ci = commit
+  st = status
+  dc = diff --cached
+  di = diff
+  aa = add --all
+  unstage = reset HEAD --
+  last = log -1 HEAD
+  svndiff = !sh -c 'git diff $(git svn find-rev r$1) $(git svn find-rev r$2)' -
+  br = branch
+  praise = blame
+[merge]
+  tool = vimdiff
+[svn]
+  rmdir = true
+[push]
+  default = current
+[branch]
+  autosetuprebase = always
+[url "https://"]
+  insteadOf = git://
+[rerere]
+  enabled = 0
+[alias]
+  pullify = config --add remote.origin.fetch '+refs/pull/*/head:refs/remotes/origin/pr/*'
+[commit]
+  template = ~/.gitmessage
+  gpgsign = true

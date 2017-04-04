@@ -17,7 +17,7 @@ brew cask install google-chrome firefox \
   dropbox box-sync \
   caffeine flycut \
   skype slack \
-  iterm2 gpgtools vagrant \
+  iterm2 gpgtools vagrant virtualbox \
   dash3
 
 # Mjolnir

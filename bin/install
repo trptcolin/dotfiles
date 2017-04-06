@@ -7,7 +7,7 @@ set -e
 brew cask install 1password
 
 # Terminal programs
-brew install git tmux zsh vim
+brew install git zsh vim tmux reattach-to-user-namespace watch
 echo "$(which zsh)" | sudo tee -a /etc/shells
 chsh -s $(which zsh)
 
@@ -34,5 +34,7 @@ brew install rbenv cmake
 # JVM
 brew cask install java
 brew cask install java7
+
+brew install postgresql
 
 launchctl start org.openbsd.ssh-agent

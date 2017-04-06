@@ -18,4 +18,5 @@ Assumes starting with a fresh OSX install
 - iTerm2 preferences:
   - Remap left option to +Esc (Preferences -> Profiles -> Keys)
   - Respect boundaries (Edit -> Selection Respects Soft Boundaries)
-
+- FaceTime preferences:
+  - Uncheck Calls from iPhone

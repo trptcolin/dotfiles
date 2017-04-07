@@ -28,6 +28,8 @@ Assumes starting with a fresh OSX install
 - Keyboard (System Preferences -> Keyboard):
   - Remap caps lock to control (Keyboard -> Modifier Keys)
   - Allow tabbing to all controls (Shortcuts -> Full Keyboard Access)
+- Trackpad
+  - More Gestures -> Turn off Swipe between Pages
 - iTerm2:
   - Remap left option to +Esc (Preferences -> Profiles -> Keys)
   - Respect boundaries (Edit -> Selection Respects Soft Boundaries)

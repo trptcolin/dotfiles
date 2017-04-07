@@ -34,6 +34,7 @@ Assumes starting with a fresh OSX install
   - Remap left option to +Esc (Preferences -> Profiles -> Keys)
   - Respect boundaries (Edit -> Selection Respects Soft Boundaries)
 - FaceTime: Uncheck Calls from iPhone
+- iMessages: Sign out of account
 - Chrome:
   - sign into 2 profiles (personal & work)
   - Chrome menu -> Warn Before Quitting

@@ -7,16 +7,34 @@ Assumes starting with a fresh OSX install
 - Run `bin/ssh_key_generation` & paste new SSH pubkey to Github
 - Clone dotfiles repository
 - Run `bin/install`
+
+### Security stuff
 - Set up 1password vaults via icloud and dropbox
 - Transfer GPG keys
   - See https://gpgtools.tenderapp.com/kb/gpg-keychain-faq/backup-or-transfer-your-keys
+- App store: update w/ latest security patches
+- Security preferences
+  - General
+    - Require password after 5min
+    - Disable auto-login
+    - Set lock screen message with contact info
+  - Firewall: Turn on
+  - FileVault: Turn on
+
+### GUI app preferences
 - Download Dash license (search email for link)
 - Dock: delete almost everything, move it to the left, and auto-hide it
-- Keyboard preferences (System Preferences -> Keyboard):
+- Mjolnir: in Security & Privacy settings -> Privacy -> Accessibility -> allow Mjolnir control
+- Keyboard (System Preferences -> Keyboard):
   - Remap caps lock to control (Keyboard -> Modifier Keys)
   - Allow tabbing to all controls (Shortcuts -> Full Keyboard Access)
-- iTerm2 preferences:
+- iTerm2:
   - Remap left option to +Esc (Preferences -> Profiles -> Keys)
   - Respect boundaries (Edit -> Selection Respects Soft Boundaries)
-- FaceTime preferences:
-  - Uncheck Calls from iPhone
+- FaceTime: Uncheck Calls from iPhone
+- Chrome:
+  - sign into 2 profiles (personal & work)
+  - Chrome menu -> Warn Before Quitting
+  - Preferences -> Advanced
+    - Uncheck Use a web service to resolve navigation errors
+    - Uncheck Offer to save your web passwords

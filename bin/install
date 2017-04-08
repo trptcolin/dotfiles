@@ -15,6 +15,7 @@ chsh -s $(which zsh)
 brew tap caskroom/versions
 brew cask install google-chrome firefox \
   dropbox box-sync \
+  crashplan \
   caffeine flycut \
   skype slack \
   iterm2 gpgtools vagrant virtualbox \

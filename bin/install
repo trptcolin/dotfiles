@@ -11,6 +11,13 @@ brew install git zsh vim tmux reattach-to-user-namespace watch
 echo "$(which zsh)" | sudo tee -a /etc/shells
 chsh -s $(which zsh)
 
+git clone git@github.com:trptcolin/vimfiles.git ~/vimfiles
+pushd vimfiles
+./update_bundles
+ln -s ~/vimfiles ~/.vim
+ln -s ~/.vim/.vimrc ~/.vimrc
+popd
+
 # Mac apps
 brew tap caskroom/versions
 brew cask install google-chrome firefox \

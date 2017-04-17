@@ -14,7 +14,7 @@ chsh -s $(which zsh)
 # Mac apps
 brew tap caskroom/versions
 brew cask install google-chrome firefox \
-  dropbox box-sync \
+  evernote dropbox box-sync \
   crashplan \
   caffeine flycut \
   skype slack \

@@ -20,7 +20,7 @@ brew cask install google-chrome firefox \
   caffeine flycut \
   skype slack \
   iterm2 gpgtools vagrant virtualbox \
-  dash3
+  dash3 yed
 
 # Mjolnir
 brew install lua

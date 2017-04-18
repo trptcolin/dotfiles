@@ -31,7 +31,8 @@ Assumes starting with a fresh OSX install
 - Trackpad
   - More Gestures -> Turn off Swipe between Pages
 - iTerm2:
-  - Remap left option to +Esc (Preferences -> Profiles -> Keys)
+  - Preferences -> Profiles -> Keys -> Remap left option to +Esc
+  - Preferences -> Profiles -> Colors -> Color Preset to Pastel (Dark Background)
   - Respect boundaries (Edit -> Selection Respects Soft Boundaries)
 - FaceTime: Uncheck Calls from iPhone
 - iMessages: Sign out of account
@@ -41,3 +42,4 @@ Assumes starting with a fresh OSX install
   - Preferences -> Advanced
     - Uncheck Use a web service to resolve navigation errors
     - Uncheck Offer to save your web passwords
+  - chrome://flags -> disable QUIC

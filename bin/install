@@ -12,7 +12,7 @@ echo "$(which zsh)" | sudo tee -a /etc/shells
 chsh -s $(which zsh)
 
 git clone git@github.com:trptcolin/vimfiles.git ~/vimfiles
-pushd vimfiles
+pushd ~/vimfiles
 ./update_bundles
 ln -s ~/vimfiles ~/.vim
 ln -s ~/.vim/.vimrc ~/.vimrc

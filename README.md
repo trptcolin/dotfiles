@@ -7,27 +7,33 @@ Assumes starting with a fresh OSX install
 - Run `bin/ssh_key_generation` & paste new SSH pubkey to Github
 - Clone dotfiles repository
 - Run `bin/install`
+- Run `bin/symlinks`
 
 ### Security stuff
 - Set up 1password vaults via icloud and dropbox
-- Transfer GPG keys
-  - See https://gpgtools.tenderapp.com/kb/gpg-keychain-faq/backup-or-transfer-your-keys
 - App store: update w/ latest security patches
+  - Allow an hour!
 - Security preferences
   - General
     - Require password after 5min
     - Disable auto-login
     - Set lock screen message with contact info
+  - FileVault: Turn on (allow 30 minutes!)
   - Firewall: Turn on
-  - FileVault: Turn on
+  - Privacy -> Accessibility -> allow Mjolnir control
 
 ### GUI app preferences
 - Download Dash license (search email for link)
 - Dock: delete almost everything, move it to the left, and auto-hide it
-- Mjolnir: in Security & Privacy settings -> Privacy -> Accessibility -> allow Mjolnir control
 - Keyboard (System Preferences -> Keyboard):
   - Remap caps lock to control (Keyboard -> Modifier Keys)
   - Allow tabbing to all controls (Shortcuts -> Full Keyboard Access)
+- Finder
+  - General
+    - Show ~everything on the desktop
+    - New Finder windows show: home folder
+  - Sidebar: remove All My Files, add ~all under Devices, remove all Tags
+  - Advanced: Show all filename extensions, don't warn on extension change
 - Trackpad
   - More Gestures -> Turn off Swipe between Pages
 - iTerm2:

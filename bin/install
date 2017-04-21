@@ -7,7 +7,7 @@ set -e
 brew cask install 1password
 
 # Terminal programs
-brew install git zsh vim tmux reattach-to-user-namespace watch
+brew install git hg zsh vim tmux reattach-to-user-namespace watch
 echo "$(which zsh)" | sudo tee -a /etc/shells
 chsh -s $(which zsh)
 

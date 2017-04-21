@@ -44,6 +44,10 @@ brew install rbenv cmake
 brew cask install java
 brew cask install java7
 
+# Clojure
+brew install boot-clj
+brew install leiningen
+
 brew install postgresql
 
 launchctl start org.openbsd.ssh-agent

@@ -22,12 +22,12 @@ popd
 brew tap caskroom/versions
 brew cask install google-chrome firefox \
   libreoffice evernote \
-  dropbox box-sync \
+  google-drive dropbox box-sync \
   crashplan \
   caffeine flycut \
   zoomus skype slack \
   iterm2 gpgtools vagrant virtualbox \
-  dash3 yed
+  dash3 yed freemind
 
 # Mjolnir
 brew install lua

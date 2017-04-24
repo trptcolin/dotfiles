@@ -25,7 +25,7 @@ brew cask install google-chrome firefox \
   dropbox box-sync \
   crashplan \
   caffeine flycut \
-  skype slack \
+  zoomus skype slack \
   iterm2 gpgtools vagrant virtualbox \
   dash3 yed
 

@@ -1,0 +1,48 @@
+$include /etc/inputrc
+
+set blink-matching-paren off
+
+set editing-mode emacs
+set keymap emacs
+
+set convert-meta on
+
+Control-v: paste-from-clipboard
+
+#set editing-mode vi
+
+#"\e[A": history-search-backward
+#"\e[B": history-search-forward
+
+#"\e[A": previous-history
+#"\e[B": next-history
+
+#"\e[A": reverse-search-history
+#"\e[B": forward-search-history
+
+#"\e[1;5C": forward-word
+#"\e[1;5D": backward-word
+#"\e[5C": forward-word
+#"\e[5D": backward-word
+#"\e\e[C": forward-word
+#"\e\e[D": backward-word
+
+# set completion-ignore-case on
+# set blink-matching-paren on
+# set history-size 0
+# set revert-all-at-newline on
+# set show-all-if-ambiguous on
+# set skip-completed-text on
+# TAB: complete
+# Control-h: backward-char
+# Control-l: forward-char
+# Control-j: next-history
+# Control-k: previous-history
+# Control-m: next-history
+# Control-k: up-history
+# Control-m: down-history
+# Control-b: backward-word
+# Control-f: forward-word
+# Control-u: universal-argument
+#
+#

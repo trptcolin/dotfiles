@@ -1,0 +1,3 @@
+home/lein/credentials*
+home/ssh/id_rsa*
+home/ssh/known_hosts

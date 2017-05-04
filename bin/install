@@ -48,6 +48,8 @@ brew cask install java7
 brew install boot-clj
 brew install leiningen
 
+brew install elixir
+
 brew install postgresql
 
 launchctl start org.openbsd.ssh-agent

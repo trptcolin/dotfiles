@@ -39,6 +39,7 @@ Assumes starting with a fresh OSX install
 - iTerm2:
   - Preferences -> Profiles -> Keys -> Remap left option to +Esc
   - Preferences -> Profiles -> Colors -> Color Preset to Pastel (Dark Background)
+  - Preferences -> Profiles -> Terminal -> Silence Bell
   - Respect boundaries (Edit -> Selection Respects Soft Boundaries)
 - FaceTime: Uncheck Calls from iPhone
 - iMessages: Sign out of account

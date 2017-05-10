@@ -52,4 +52,6 @@ brew install elixir
 
 brew install postgresql
 
+easy_install pygments
+
 launchctl start org.openbsd.ssh-agent

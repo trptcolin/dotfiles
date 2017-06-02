@@ -27,7 +27,8 @@ brew cask install google-chrome firefox \
   caffeine flycut \
   zoomus skype slack \
   iterm2 gpgtools vagrant virtualbox \
-  dash3 yed freemind omnigraffle6
+  dash3 yed freemind omnigraffle6 \
+  wireshark keybase ngrok
 
 # Mjolnir
 brew install lua

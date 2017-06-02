@@ -1,4 +1,5 @@
 home/lein/credentials*
 home/ssh/id_rsa*
 home/ssh/known_hosts
+home/ssh/config_files/local
 repl-history

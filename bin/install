@@ -26,7 +26,7 @@ brew cask install google-chrome firefox \
   google-drive dropbox box-sync \
   crashplan \
   caffeine flycut \
-  zoomus skype slack \
+  zoomus skype slack colloquy \
   iterm2 gpgtools vagrant virtualbox \
   dash3 yed freemind omnigraffle6 \
   wireshark keybase ngrok

@@ -38,18 +38,14 @@ luarocks install mjolnir.hotkey --local
 luarocks install mjolnir.alert --local
 luarocks install mjolnir.sd.grid --local
 
-# Ruby
+# Dev languages
 brew install rbenv cmake
-
-# JVM
 brew cask install java
 brew cask install java7
-
-# Clojure
 brew install boot-clj
 brew install leiningen
-
 brew install elixir
+brew install node
 
 brew install postgresql
 

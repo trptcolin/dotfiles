@@ -29,7 +29,8 @@ brew cask install google-chrome firefox \
   zoomus skype slack colloquy \
   iterm2 gpgtools vagrant virtualbox \
   dash3 yed freemind omnigraffle6 \
-  wireshark keybase ngrok
+  wireshark keybase ngrok \
+  docker
 
 # Mjolnir
 brew install lua

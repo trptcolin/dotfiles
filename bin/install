@@ -64,4 +64,6 @@ codeclimate engines:install fixme
 codeclimate engines:install nodesecurity
 codeclimate engines:install requiresafe
 
+brew install haskell-stack
+
 launchctl start org.openbsd.ssh-agent

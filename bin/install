@@ -37,6 +37,7 @@ pip install awscli --upgrade --user
 pip install awsebcli --upgrade --user
 
 # Dev languages
+brew install imagemagick
 brew install rbenv cmake
 brew cask install java
 brew cask install java7

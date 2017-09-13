@@ -20,7 +20,6 @@ Assumes starting with a fresh OSX install
     - Set lock screen message with contact info
   - FileVault: Turn on (allow 30 minutes!)
   - Firewall: Turn on
-  - Privacy -> Accessibility -> allow Mjolnir control
 
 ### GUI app preferences
 - Download Dash license (search email for link)

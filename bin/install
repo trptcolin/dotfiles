@@ -32,6 +32,10 @@ brew cask install google-chrome firefox \
   wireshark keybase ngrok \
   docker
 
+brew install terraform
+pip install awscli --upgrade --user
+pip install awsebcli --upgrade --user
+
 # Dev languages
 brew install rbenv cmake
 brew cask install java

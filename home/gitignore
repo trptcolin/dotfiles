@@ -33,9 +33,11 @@ projectFilesBackup
 # leiningen
 .lein-deps-sum
 .lein-failures
+.lein-repl-history
 .repl-history
 .lein-plugins
 .nrepl-port
+/target
 
 # sbt
 sbt.log

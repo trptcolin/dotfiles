@@ -43,10 +43,24 @@ brew cask install java7
 brew install boot-clj
 brew install leiningen
 brew install elixir
-brew install node
 
 brew install postgresql
 
 easy_install pygments
+
+# CodeClimate local analysis
+docker pull codeclimate/codeclimate
+brew tap codeclimate/formulae
+brew install codeclimate
+
+# Node + static analysis
+brew install node
+brew install yarn
+codeclimate engines:install checks
+codeclimate engines:install duplication
+codeclimate engines:install eslint
+codeclimate engines:install fixme
+codeclimate engines:install nodesecurity
+codeclimate engines:install requiresafe
 
 launchctl start org.openbsd.ssh-agent

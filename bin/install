@@ -30,7 +30,7 @@ brew cask install google-chrome firefox \
   iterm2 gpgtools vagrant virtualbox \
   dash3 yed freemind omnigraffle6 \
   wireshark keybase ngrok \
-  docker
+  docker intellij-idea-ce
 
 brew install terraform
 pip install awscli --upgrade --user
@@ -44,6 +44,7 @@ brew cask install java7
 brew install boot-clj
 brew install leiningen
 brew install elixir
+brew install gradle
 
 brew install postgresql
 

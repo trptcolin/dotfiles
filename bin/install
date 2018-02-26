@@ -45,7 +45,10 @@ brew cask install java7
 brew install boot-clj
 brew install leiningen
 brew install elixir
+
 brew install gradle
+brew tap pivotal/tap
+brew install springboot
 
 brew install postgresql
 

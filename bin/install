@@ -40,15 +40,24 @@ pip install awsebcli --upgrade --user
 # Dev languages
 brew install imagemagick
 brew install rbenv cmake
+
+## JVM
 brew cask install java
+brew cask install java8
 brew cask install java7
+brew cask install java6
+brew install gradle
 brew install boot-clj
 brew install leiningen
-brew install elixir
-
-brew install gradle
 brew tap pivotal/tap
 brew install springboot
+
+brew install elixir
+
+## Python
+pip install virtualenvwrapper
+pip install ipython
+brew install autoenv
 
 brew install postgresql
 

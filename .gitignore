@@ -1,6 +1,14 @@
+home/ipython/**/*.sqlite
+home/ipython/**/db
+home/ipython/**/log
+home/ipython/**/pid
+home/ipython/**/security
+
 home/lein/credentials*
+
 home/ssh/id_rsa*
 home/ssh/keys
 home/ssh/known_hosts
 home/ssh/config_files/local
+
 repl-history

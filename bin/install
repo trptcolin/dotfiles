@@ -24,7 +24,7 @@ brew tap caskroom/versions
 brew cask install google-chrome firefox \
   libreoffice evernote \
   google-drive dropbox box-sync \
-  crashplan \
+  arq \
   caffeine flycut hammerspoon \
   zoomus skype slack colloquy \
   iterm2 gpgtools vagrant virtualbox \

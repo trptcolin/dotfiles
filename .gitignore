@@ -3,6 +3,7 @@ home/ipython/**/db
 home/ipython/**/log
 home/ipython/**/pid
 home/ipython/**/security
+home/ipython/**/startup/README
 
 home/lein/credentials*
 

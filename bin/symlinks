@@ -14,3 +14,7 @@ for f in $(ls "$home_path"); do
     ln -s "$home_path/$f" "$HOME/.$f"
   fi
 done
+
+if [[ ! -e "$HOME/bin" ]]; then
+  ln -s "$HOME/.bin" "$HOME/bin"
+fi

@@ -31,7 +31,7 @@ brew cask install google-chrome firefox \
   dash3 yed freemind omnigraffle6 \
   wireshark keybase ngrok \
   docker intellij-idea-ce \
-  audacity
+  audacity hugo
 
 brew install terraform
 pip install awscli --upgrade --user

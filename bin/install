@@ -55,6 +55,7 @@ brew install springboot
 brew install elixir
 
 ## Python
+brew install python
 pip install virtualenvwrapper
 pip install ipython
 brew install autoenv

@@ -1,7 +1,7 @@
 autoload -U colors && colors
 autoload -Uz vcs_info
 
-zstyle ':vcs_info:*' stagedstr '%F{28}•%f'
+zstyle ':vcs_info:*' stagedstr '%F{green}•%f'
 zstyle ':vcs_info:*' unstagedstr '%F{1}•%f'
 zstyle ':vcs_info:*' check-for-changes true
 zstyle ':vcs_info:(sv[nk]|bzr):*' branchformat '%b%F{1}:%F{11}%r'
@@ -18,4 +18,4 @@ zstyle ':vcs_info:git*+set-message:*' hooks git-untracked
 precmd () { vcs_info }
 
 setopt prompt_subst
-PROMPT='[%F{0}%n:%F{4}%c%{$reset_color%}]${vcs_info_msg_0_} %(?/%F{blue}/%F{red})% %(!.#.$) %{$reset_color%}'
+PROMPT='[%F{green}%n:%F{blue}%c%{$reset_color%}]${vcs_info_msg_0_} %(?/%F{blue}/%F{red})% %(!.#.$) %{$reset_color%}'

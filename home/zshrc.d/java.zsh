@@ -1,6 +1,8 @@
 function java_version {
   version=$1
-  export JAVA_HOME=$(/usr/libexec/java_home -v $version)
+  brew_location="/usr/local/Cellar"
+  export JAVA_HOME="$(ls -d $brew_location/adoptopenjdk-openjdk*/jdk* | grep $version)"
+  brew unlink adoptopenjdk-openjdk$version && brew link --overwrite adoptopenjdk-openjdk$version
 }
 
 function classpath_jars() {
@@ -14,5 +16,3 @@ function find_classpath_jar_contents() {
     jar tf $jar | grep $query
   done
 }
-
-java_version 1.8

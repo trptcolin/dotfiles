@@ -42,10 +42,8 @@ brew install imagemagick
 brew install rbenv cmake
 
 ## JVM
-brew cask install java
-brew cask install java8
-brew cask install java7
-brew cask install java6
+brew install adoptopenjdk-openjdk8
+brew install adoptopenjdk-openjdk10
 brew install gradle
 brew install boot-clj
 brew install leiningen

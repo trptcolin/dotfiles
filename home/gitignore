@@ -51,3 +51,9 @@ sbt.log
 .rakeTasks
 default.gems
 .generators
+
+# python
+__pycache__
+*.pyc
+
+.vscode

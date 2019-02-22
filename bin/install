@@ -61,7 +61,6 @@ brew install elixir
 brew install python
 pip install virtualenvwrapper
 pip install ipython
-brew install autoenv
 
 brew install postgresql
 

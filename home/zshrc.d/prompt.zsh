@@ -18,4 +18,12 @@ zstyle ':vcs_info:git*+set-message:*' hooks git-untracked
 precmd () { vcs_info }
 
 setopt prompt_subst
-PROMPT='[%F{green}%n:%F{blue}%c%{$reset_color%}]${vcs_info_msg_0_} %(?/%F{blue}/%F{red})% %(!.#.$) %{$reset_color%}'
+
+prompt_fancy(){
+  PROMPT='[%F{green}%n:%F{blue}%c%{$reset_color%}]${vcs_info_msg_0_} %(?/%F{blue}/%F{red})% %(!.#.$) %{$reset_color%}'
+}
+prompt_simple(){
+  PROMPT="[%F{green}%c%{$reset_color%}]$ "
+}
+
+prompt_fancy

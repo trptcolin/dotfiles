@@ -7,6 +7,8 @@ home/ipython/**/startup/README
 
 home/lein/credentials*
 
+home/netrc
+
 home/ssh/id_rsa*
 home/ssh/keys
 home/ssh/known_hosts

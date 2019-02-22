@@ -40,6 +40,11 @@ pip install awsebcli --upgrade --user
 # Dev languages
 brew install imagemagick
 brew install rbenv cmake
+brew install asdf
+
+source /usr/local/opt/asdf/asdf.sh
+asdf plugin-add elixir
+asdf plugin-add golang
 
 ## JVM
 brew install adoptopenjdk-openjdk8

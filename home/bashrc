@@ -1,0 +1,15 @@
+function current_branch {
+  git name-rev --name-only @ 2>/dev/null || echo -n ""
+}
+
+prompt_simple() {
+  PS1='$ '
+}
+prompt_fancy() {
+  PS1='\e];\s\a\e[33m\w \e[36m$(current_branch)\e[m$ '
+}
+prompt_fancy
+
+alias ls="ls -G"
+alias ll="ls -lah"
+alias l="ll"

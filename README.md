@@ -10,7 +10,7 @@ Assumes starting with a fresh OSX install
 - Run `bin/symlinks`
 
 ### Security stuff
-- Set up 1password vaults via icloud and dropbox
+- Set up 1password
 - App store: update w/ latest security patches
   - Allow an hour!
 - Security preferences

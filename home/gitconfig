@@ -39,6 +39,7 @@
   enabled = 0
 [alias]
   pullify = config --add remote.origin.fetch '+refs/pull/*/head:refs/remotes/origin/pr/*'
+	new = !git init && git symbolic-ref HEAD refs/heads/main
 [commit]
   template = ~/.gitmessage
   gpgsign = true

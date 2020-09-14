@@ -5,6 +5,7 @@ local grid = require "hs.grid"
 grid.MARGINX = 0
 grid.MARGINY = 0
 grid.GRIDWIDTH = 4
+grid.GRIDHEIGHT = 4
 
 local mash = {"cmd", "alt", "ctrl"}
 local mashshift = {"cmd", "alt", "shift"}

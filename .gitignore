@@ -14,4 +14,6 @@ home/ssh/keys
 home/ssh/known_hosts
 home/ssh/config_files/local
 
+home/zshrc.d/private.zsh
+
 repl-history

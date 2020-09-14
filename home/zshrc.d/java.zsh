@@ -1,8 +1,7 @@
-function java_version {
+function jdk {
   version=$1
-  brew_location="/usr/local/Cellar"
-  export JAVA_HOME="$(ls -d $brew_location/adoptopenjdk-openjdk*/jdk* | grep $version)"
-  brew unlink adoptopenjdk-openjdk$version && brew link --overwrite adoptopenjdk-openjdk$version
+  export JAVA_HOME=$(/usr/libexec/java_home -v"$version");
+  java -version
 }
 
 function classpath_jars() {

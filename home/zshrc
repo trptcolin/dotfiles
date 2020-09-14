@@ -10,8 +10,14 @@ export EDITOR=vim
 export CC=/usr/bin/clang
 export MANPATH=/usr/share/man:$MANPATH
 
+#echo "### about to source stuff"
 if [ -d $HOME/.zshrc.d ]; then
   for file in $HOME/.zshrc.d/*.zsh; do
+    #echo "### sourcing: $file"
+    #time (source $file)
     source $file
   done
 fi
+#echo "### done sourcing stuff"
+
+ulimit -n 4096

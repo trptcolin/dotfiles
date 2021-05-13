@@ -25,6 +25,7 @@
   svndiff = !sh -c 'git diff $(git svn find-rev r$1) $(git svn find-rev r$2)' -
   br = branch
   praise = blame
+	recent = branch --sort=-committerdate --format=\"%(committerdate:relative)%09%(refname:short)\"
 [merge]
   tool = vimdiff
 [svn]
@@ -43,3 +44,5 @@
 [commit]
   template = ~/.gitmessage
   gpgsign = true
+[init]
+	defaultBranch = main

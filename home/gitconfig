@@ -12,6 +12,7 @@
   editor = vim
   ignorecase = true
   autocrlf = input
+	pager = less -x1,5
 [alias]
   co = checkout
   co-pr = !sh -c 'git fetch origin pull/$1/head:pr/$1 && git checkout pr/$1' -

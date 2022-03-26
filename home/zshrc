@@ -1,5 +1,6 @@
 unsetopt auto_cd
 unsetopt correct_all
+setopt interactivecomments
 
 alias ls="ls -G"
 alias ll="ls -lah"

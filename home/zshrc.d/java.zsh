@@ -1,3 +1,5 @@
+export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
+
 function jdk {
   version=$1
   export JAVA_HOME=$(/usr/libexec/java_home -v"$version");

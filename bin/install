@@ -2,44 +2,46 @@
 
 set -e
 
-# Basics
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-brew cask install 1password
-
 # Terminal programs
 brew install git hg zsh vim tmux reattach-to-user-namespace \
-  watch tree wrk coreutils gnu-sed jq
-echo "$(which zsh)" | sudo tee -a /etc/shells
-chsh -s $(which zsh)
+  watch tree coreutils gnu-sed jq
+brew install postgresql
 
-git clone git@github.com:trptcolin/vimfiles.git ~/vimfiles
+[ ! -d "$HOME/vimfiles" ] && git clone git@github.com:trptcolin/vimfiles.git $HOME/vimfiles
 pushd ~/vimfiles
 ./update_bundles
-ln -s ~/vimfiles ~/.vim
-ln -s ~/.vim/.vimrc ~/.vimrc
+ln -sf ~/vimfiles ~/.vim
+ln -sf ~/.vim/.vimrc ~/.vimrc
 popd
 
 # Mac apps
-brew tap caskroom/versions
-brew cask install google-chrome firefox \
-  libreoffice evernote \
-  google-drive dropbox box-sync \
-  arq \
-  caffeine flycut hammerspoon \
-  zoomus skype slack colloquy \
-  iterm2 gpgtools vagrant virtualbox \
-  dash3 yed freemind macdown omnigraffle \
+brew install --cask google-chrome firefox \
+  evernote google-drive arq \
+  caffeine flycut hammerspoon
+brew install --cask zoom slack \
+  iterm2 gpg-suite vagrant virtualbox \
+  macdown omnigraffle \
   wireshark keybase ngrok \
-  docker intellij-idea-ce \
-  audacity hugo keycastr
+  docker
+
+brew install --cask spotify
+brew install --cask macdown
+# brew install --cask omnigraffle
+# brew install --cask intellij-idea-ce
+# brew install --cask colloquy
+# brew install --cask dropbox box-sync
+# brew install --cask yed freemind keycastr
+# brew install --cask audacity
+# brew install --cask hugo
 
 brew install terraform
-pip install awscli --upgrade --user
-pip install awsebcli --upgrade --user
+brew install awscli
+#pip3 install awscli --upgrade --user
+#pip3 install awsebcli --upgrade --user
 
 # Dev languages
-brew install imagemagick
-brew install rbenv cmake
+# brew install imagemagick
+# brew install rbenv cmake
 brew install asdf
 
 source /usr/local/opt/asdf/asdf.sh
@@ -47,40 +49,39 @@ asdf plugin-add elixir
 asdf plugin-add golang
 
 ## JVM
-brew install adoptopenjdk-openjdk8
-brew install adoptopenjdk-openjdk10
-brew install gradle
-brew install boot-clj
-brew install leiningen
-brew tap pivotal/tap
-brew install springboot
+# brew install adoptopenjdk-openjdk8
+# brew install adoptopenjdk-openjdk10
+# brew install gradle
+# brew install boot-clj
+# brew install leiningen
+# brew tap pivotal/tap
+# brew install springboot
 
-brew install elixir
+# brew install elixir
 
 ## Python
-brew install python
-pip install virtualenvwrapper
-pip install ipython
+# brew install python
+# pip install virtualenvwrapper
+# pip install ipython
 
-brew install postgresql
 
-easy_install pygments
+# easy_install pygments
 
-# CodeClimate local analysis
-docker pull codeclimate/codeclimate
-brew tap codeclimate/formulae
-brew install codeclimate
+## CodeClimate local analysis
+# docker pull codeclimate/codeclimate
+# brew tap codeclimate/formulae
+# brew install codeclimate
 
-# Node + static analysis
-brew install node
-brew install yarn
-codeclimate engines:install checks
-codeclimate engines:install duplication
-codeclimate engines:install eslint
-codeclimate engines:install fixme
-codeclimate engines:install nodesecurity
-codeclimate engines:install requiresafe
+## Node + static analysis
+# brew install node
+# brew install yarn
+# codeclimate engines:install checks
+# codeclimate engines:install duplication
+# codeclimate engines:install eslint
+# codeclimate engines:install fixme
+# codeclimate engines:install nodesecurity
+# codeclimate engines:install requiresafe
 
-brew install haskell-stack
+# brew install haskell-stack
 
 launchctl start org.openbsd.ssh-agent

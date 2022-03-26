@@ -4,6 +4,8 @@
 
 Assumes starting with a fresh OSX install
 
+- Get 1password:
+  - `bin/get_1password`
 - Run `bin/ssh_key_generation` & paste new SSH pubkey to Github
 - Clone dotfiles repository
 - Run `bin/install`
